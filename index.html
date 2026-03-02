@@ -3,20 +3,129 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>☄️𝗧𝗜𝗣𝗣𝗜𝗡𝗚 𝗧𝗢𝗦𝗦 𝗟𝗢𝗔𝗗☄️ - Premium Cricket Tips</title>
+<title>SHEKHAWAT RAJPUT - Cricket Updates</title>
+
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
 <style>
-body{min-height:100vh;background:#020617;color:white;display:flex;justify-content:center;align-items:center;}
-.logo{width:150px;height:150px;border-radius:50%;border:4px solid gold;box-shadow:0 0 20px gold;}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;700&display=swap');
+
+*{font-family:'Montserrat',sans-serif;}
+
+body{
+min-height:100vh;
+background:radial-gradient(circle at top,#0f2027,#000);
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+}
+
+/* animated glow */
+.glow-bg{
+position:absolute;
+width:350px;
+height:350px;
+background:radial-gradient(circle,#ff6600,transparent 70%);
+filter:blur(120px);
+animation:move 6s infinite alternate;
+}
+@keyframes move{
+from{transform:translate(-50px,-50px)}
+to{transform:translate(50px,50px)}
+}
+
+/* Card */
+.card{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(25px);
+border-radius:30px;
+padding:2rem;
+max-width:400px;
+width:100%;
+text-align:center;
+box-shadow:0 0 50px rgba(255,100,0,.6);
+border:1px solid rgba(255,255,255,.2);
+position:relative;
+z-index:10;
+}
+
+/* Logo Text */
+.logo-text{
+font-family:'Bebas Neue',sans-serif;
+font-size:3rem;
+color:#fff;
+text-shadow:0 0 15px #ff6600,0 0 30px #ff0000;
+letter-spacing:3px;
+animation:pulse 2s infinite;
+}
+@keyframes pulse{
+0%,100%{transform:scale(1)}
+50%{transform:scale(1.1)}
+}
+
+/* Live badge */
+.live{
+background:#00ff99;
+color:#000;
+padding:4px 14px;
+border-radius:20px;
+font-weight:bold;
+animation:blink 1.5s infinite;
+}
+@keyframes blink{
+0%,100%{opacity:1}
+50%{opacity:.5}
+}
+
+/* Button */
+.join-btn{
+margin-top:20px;
+display:block;
+padding:16px;
+font-size:20px;
+border-radius:15px;
+background:linear-gradient(135deg,#ff0000,#ff9900);
+color:white;
+font-family:'Bebas Neue',sans-serif;
+letter-spacing:2px;
+transition:.3s;
+box-shadow:0 0 25px rgba(255,120,0,.8);
+}
+.join-btn:hover{
+transform:scale(1.07);
+box-shadow:0 0 45px rgba(255,150,0,1);
+}
 </style>
 </head>
+
 <body>
-<div style="text-align:center;">
-<img src="logo.jpg" class="logo"><br><br>
-<h1>☄️𝗧𝗜𝗣𝗣𝗜𝗡𝗚 𝗧𝗢𝗦𝗦 𝗟𝗢𝗔𝗗☄️</h1>
-<a href="https://t.me/+H2J8cLAqpbgxN2I1">JOIN TELEGRAM</a>
+
+<div class="glow-bg"></div>
+
+<div class="card">
+
+<div class="mb-2">
+<span class="live">● LIVE</span>
 </div>
+
+<h1 class="logo-text">SHEKHAWAT RAJPUT</h1>
+<p class="text-orange-400 tracking-widest mb-4">🏏 Cricket Updates</p>
+
+<div class="text-white space-y-2 mb-5 font-semibold">
+<p>IPL 2024 <span class="text-green-400">68/74 Pass</span> ✅</p>
+<p>IPL 2025 <span class="text-yellow-400">Free Tips</span> 💯</p>
+<p class="text-sm text-gray-300">12+ Years Experience 🔥</p>
+</div>
+
+<a href="https://t.me/+zJ7lq0W4TVAzZTU9" target="_blank" class="join-btn">
+<i class="fab fa-telegram"></i> JOIN TELEGRAM CHANNEL
+</a>
+
+<p class="text-gray-400 text-xs mt-4">100% Free Cricket Predictions</p>
+
+</div>
+
 </body>
 </html>
